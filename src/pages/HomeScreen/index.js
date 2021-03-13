@@ -1,10 +1,18 @@
+import Navbar from 'components/Header';
 import React from 'react';
 import "./HomeScreen.css";
 
 function HomeScreen() {
   return (
     <div className="home" >
-      <h1>this is home screen</h1>
+
+      {/* Nav */}
+      <Navbar />
+
+      {/* Banner */}
+
+      {/* product */}
+
     </div>
   )
 }

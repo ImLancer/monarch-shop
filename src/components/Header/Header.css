@@ -1,0 +1,16 @@
+.header__logo{
+  width: 300px;
+  height: 200px;
+}
+
+.header__category__icon{
+  width: 30px;
+}
+
+.header__brand__icon{
+  width: 30px;
+}
+
+.header__product__icon{
+  width: 30px;
+}
