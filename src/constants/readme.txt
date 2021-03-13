@@ -1,0 +1,1 @@
+Thư mục chứa các hình ảnh và biến cố định dùng cho dự án

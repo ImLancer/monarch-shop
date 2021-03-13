@@ -1,0 +1,1 @@
+Thư mục chứa các slice điều khiển của redux
