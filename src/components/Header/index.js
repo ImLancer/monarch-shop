@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Header.css";
 import { makeStyles } from '@material-ui/core/styles';
-import Logo from "constants/images/logos/logo_4.png";
+import Logo from "constants/images/logos/logo_5.png";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 import InfoIcon from "@material-ui/icons/Info";
-import ProductIcon from "constants/images/icons/product_icon_1.jpg";
+import ProductIcon from "constants/images/icons/product_icon_2.png";
 import CategoryIcon from "constants/images/icons/category_icon.png";
 import BrandIcon from "constants/images/icons/brand_icon_2.png";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
@@ -52,7 +52,7 @@ function Header() {
                 className="header__icon"
                 fontSize="large"
               />
-              <p className="header__label">Home</p>
+              <p className="header__label header__label--active">Home</p>
             </div>
             <div className="header__nav__icon">
               <img 
