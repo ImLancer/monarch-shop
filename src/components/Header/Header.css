@@ -1,4 +1,5 @@
 .header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .header__content{
@@ -14,11 +15,17 @@
   align-items: center;
 }
 
+.header__card{
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+
 .header__nav{
   height: 30%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   border-top: 2px double brown;
   border-bottom: 3px solid brown;
 }
@@ -37,12 +44,6 @@
 
 .header__nav__icon__last:hover > .header__label{
   display: inline;
-}
-
-.header__card{
-  display: flex;
-  align-items: center;
-  height: 35px;
 }
 
 .header__nav__icon{
@@ -70,7 +71,29 @@
 .header__search-cart{
   display: flex;
   align-items: center;
+  justify-content: space-around;
   height: auto;
+}
+
+.header__search{
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__search__input{
+  height: 25px !important;
+  width: 250px !important;
+  border-radius: 1px thin;
+}
+
+.header__search__icon{
+  padding: 5px;
+  height: 21.5px !important;
+  color: white;
+  cursor: pointer;
+  background-color: brown;
 }
 
 .header__cart{
@@ -79,6 +102,11 @@
   justify-content: space-between;
 }
 
+.header__cart__item{
+  width: 25px;
+}
+
+/* Dinh dang cho cac icon */
 .header__logo{
   height: 30%;
   width: 140px;
