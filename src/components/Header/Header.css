@@ -1,16 +1,91 @@
-.header__logo{
-  width: 300px;
+.header{
+}
+
+.header__content{
+  padding-left: 100px;
+  padding-right: 100px;
   height: 200px;
 }
 
-.header__category__icon{
-  width: 30px;
+.header__contact{
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header__brand__icon{
-  width: 30px;
+.header__nav{
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 2px double brown;
+  border-bottom: 3px solid brown;
 }
 
-.header__product__icon{
-  width: 30px;
+.header__label{
+  padding: 0px;
+  margin: 0px;
+  display: none;
+  justify-content: flex-start;
 }
+
+.header__nav__icon:hover > .header__label{
+  display: inline;
+  border-right: none;
+}
+
+.header__nav__icon__last:hover > .header__label{
+  display: inline;
+}
+
+.header__card{
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+
+.header__nav__icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 90px;
+  border-right: 1px dotted black;
+}
+
+.header__nav__icon__last{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 90px;
+}
+
+.header__nav__icon > .MuiSvgIcon-root{  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__search-cart{
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.header__cart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo{
+  height: 30%;
+  width: 140px;
+}
+
+.header__icon{
+  width: 35px;
+  height: 35px;
+}
+
