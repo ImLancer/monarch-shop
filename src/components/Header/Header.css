@@ -2,6 +2,10 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.header__info{
+  font-size: 10px;
+}
+
 .header__content{
   padding-left: 100px;
   padding-right: 100px;
@@ -13,6 +17,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__contact > div{
+  min-width: 250px;
 }
 
 .header__card{
@@ -35,6 +43,17 @@
   margin: 0px;
   display: none;
   justify-content: flex-start;
+}
+
+.header__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__signin{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__nav__icon:hover > .header__label{
@@ -107,9 +126,8 @@
 }
 
 /* Dinh dang cho cac icon */
-.header__logo{
-  height: 30%;
-  width: 140px;
+.header__logo__icon{
+  width: 120px;
 }
 
 .header__icon{

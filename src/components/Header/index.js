@@ -24,17 +24,21 @@ function Header() {
       <div className="header__content">
       { /* Contact information */ }
         <div className="header__contact">
-          <div>
-            <p>Mail and phone</p>
+          <div className="header__info">
+            <p>
+              Monacrchshop@gmail.com <br/>
+              Phone: 0396988709 <br/>
+              Address: 251/6 Tran Ngoc Que, Ninh Kieu, Can Tho
+            </p>
           </div>
-          <div>
+          <div className="header__logo">
             <img
-              className="header__logo"
+              className="header__logo__icon"
               src={Logo}
               alt=""
             />
           </div>
-          <div>
+          <div className="header__signin">
             <p>Signin & signup</p>
           </div>
         </div>
