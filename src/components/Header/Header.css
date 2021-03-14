@@ -7,8 +7,8 @@
 }
 
 .header__content{
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
   height: 130px;
 }
 
@@ -120,7 +120,7 @@
   height: 21.5px !important;
   color: white;
   cursor: pointer;
-  background-color: brown;
+  background-color: #656839;
 }
 
 .header__cart{
