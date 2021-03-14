@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #DEE7E7;
 }
 
 .header__contact > div{
@@ -37,8 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 2px double brown;
-  border-bottom: 3px solid brown;
+  border-top: 2px double #656839;
+  border-bottom: 3px solid #656839;
   background-color: white;
 }
 
