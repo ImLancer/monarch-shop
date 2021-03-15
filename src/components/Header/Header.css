@@ -1,19 +1,13 @@
 .header{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif;
+  width: 100%;
 }
 
 .header__info{
   font-size: 0.6rem;
 }
 
-.header__content{
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 130px;
-}
-
 .header__contact{
-  height: 50%;
+  height: 80px !important;
   padding-left: 5px;
   padding-right: 5px;
   display: flex;
@@ -22,19 +16,23 @@
   background-color: #DEE7E7;
 }
 
-.header__contact > div{
-  min-width: 250px;
-}
-
 .header__card{
   display: flex;
   align-items: center;
-  height: 35px;
+  min-height: 45px;
 }
 
-.header__nav{
-  height: 46%;
+/* .header__search-cart{
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+} */
+
+.header__nav{
+  min-height: 70px !important;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   border-top: 2px double #656839;
@@ -55,9 +53,78 @@
   align-items: center;
 }
 
-.header__signin{
+.header__login{
   display: flex;
   justify-content: flex-end;
+}
+
+.header__login__icon{
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login__label{
+  padding: 0px;
+  margin: 0px;
+  justify-content: flex-start;
+}
+
+.header__login__item--last{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 80px;
+  transition: transform 250ms ease-in-out;
+}
+
+.header__login__item--last:hover{
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.header__login__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 80px;
+  border-right: 1px dotted #656839;
+  transition: transform 250ms ease-in-out;
+}
+
+.header__login__item:hover{
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.header__nav__icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 75px;
+  opacity: 0.7;
+  transition: transform 250ms ease-in-out;
+}
+
+.header__nav__icon:hover{
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.header__nav__icon--active{
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.header__nav__icon--active:hover{
+  opacity: 1;
+  transform: none;
 }
 
 .header__nav__icon:hover > .header__label{
@@ -73,33 +140,9 @@
   display: inline;
 }
 
-.header__nav__icon{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  width: 90px;
-  border-right: 1px dotted black;
-}
-
-.header__nav__icon__last{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  width: 90px;
-}
-
 .header__nav__icon > .MuiSvgIcon-root{  
   margin-left: auto;
   margin-right: auto;
-}
-
-.header__search-cart{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: auto;
 }
 
 .header__search{
@@ -130,7 +173,11 @@
 }
 
 .header__cart__item{
-  width: 40px;
+  width: 35px;
+}
+
+.header__shopping__icon{
+  cursor: pointer;
 }
 
 /* Dinh dang cho cac icon */

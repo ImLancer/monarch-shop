@@ -9,16 +9,9 @@ import ProductIcon from "constants/images/icons/product_icon_2.png";
 import CategoryIcon from "constants/images/icons/category_icon.png";
 import BrandIcon from "constants/images/icons/brand_icon_2.png";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import { TextField } from '@material-ui/core';
-
-const useStyles = makeStyles({
-  root: {
-    height: 30,
-  },
-});
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 function Header() {
-  const classes = useStyles();
   return (
     <div className="header">
       <div className="header__content">
@@ -38,8 +31,17 @@ function Header() {
               alt=""
             />
           </div>
-          <div className="header__signin">
-            <p>Signin & signup</p>
+          <div className="header__login">
+            <div className="header__login__icon">
+              <AccountCircleIcon fontSize="large" />
+              <p className="login__label">Guest</p>
+            </div>
+            <div className="header__login__item">
+              <p>SIGN IN</p>
+            </div>
+            <div className="header__login__item--last">
+              <p>SIGN UP</p>
+            </div>
           </div>
         </div>
 
@@ -47,7 +49,7 @@ function Header() {
 
           { /*Navbar */ }
           <div className="header__card">
-            <div className="header__nav__icon">
+            <div className="header__nav__icon header__nav__icon--active">
               <HomeIcon
                 className="header__icon"
                 fontSize="large"
@@ -78,7 +80,7 @@ function Header() {
               />
               <p className="header__label">Brand</p>
             </div>
-            <div className="header__nav__icon__last">
+            <div className="header__nav__icon header__nav__icon__last">
               <InfoIcon
                 className="header__icon"
                 fontSize="large"
@@ -88,7 +90,7 @@ function Header() {
           </div>
 
           { /* Search And Cart */ }
-          <div className="header__search-cart">
+          <div className="header__card header__search-cart">
             <div className="header__search">
               <input className="header__search__input" type="text" placeholder="Type value for searching"/>
               <SearchIcon className="header__search__icon" />
@@ -96,7 +98,7 @@ function Header() {
 
             <div className="header__cart">
               <ShoppingCartIcon
-                className="header__cart__item"
+                className="header__cart__item header__shopping__icon"
                 fontSize="small"
               />
               <p className="header__cart__item">0</p>
