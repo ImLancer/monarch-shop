@@ -37,10 +37,10 @@ function Header() {
               <p className="login__label">Guest</p>
             </div>
             <div className="header__login__item">
-              <p>SIGN IN</p>
+              <p className="login__label">SIGN IN</p>
             </div>
             <div className="header__login__item--last">
-              <p>SIGN UP</p>
+              <p className="login__label">SIGN UP</p>
             </div>
           </div>
         </div>
