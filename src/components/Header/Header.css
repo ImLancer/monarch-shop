@@ -6,8 +6,15 @@
   font-size: 0.6rem;
 }
 
+.header__card{
+  display: flex;
+  align-items: center;
+  min-height: 45px;
+}
+
+/*Contact formating*/
 .header__contact{
-  height: 70px !important;
+  height: 60px !important;
   padding-left: 5px;
   padding-right: 5px;
   display: flex;
@@ -16,21 +23,69 @@
   background-color: #DEE7E7;
 }
 
-.header__card{
+/*Login formating*/
+.header__login{
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  min-height: 45px;
 }
 
-/* .header__search-cart{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: auto;
-} */
+  .header__login__icon{
+    min-width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 2px solid #656839;
+  }
 
+  .login__label{
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    justify-content: flex-start;
+  }
+
+  .header__login__item--last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 55px;
+    height: 20px !important;
+    opacity: 0.8;
+    transition: transform 150ms ease-in-out;
+  }
+
+  .header__login__item--last:hover{
+    opacity: 1;
+    transform: scale(1.07);
+  }
+
+  .header__login__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 55px;
+    height: 20px !important;
+    border-right: 1px dotted #656839;
+    opacity: 0.8;
+    transition: transform 150ms ease-in-out;
+  }
+
+  .header__login__item:hover{
+    opacity: 1;
+    transform: scale(1.07);
+  }
+
+/*Nav bar*/
 .header__nav{
-  min-height: 70px !important;
+  min-height: 35px !important;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -40,115 +95,85 @@
   background-color: white;
 }
 
-.header__label{
-  padding: 0px;
-  margin: 0px;
-  display: none;
-  justify-content: flex-start;
-}
+  .header__label--active{
+    display: inline;
+  }
 
-.header__logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .header__label{
+    padding: 0px;
+    margin: 0px;
+    justify-content: flex-start;
+  }
 
-.header__login{
-  display: flex;
-  justify-content: flex-end;
-}
+  .header__label__arrow{
+    width: 10px;
+    height: 10px;
+  }
 
-.header__login__icon{
-  min-width: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-right: 2px solid #656839;
-}
+  .header__nav__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 75px;
+    min-height: 32px;
+    border-right: 2px solid #656839;
+    opacity: 0.7;
+    transition: transform 150ms ease-in-out;
+  }
 
-.login__label{
-  padding: 0px;
-  margin: 0px;
-  font-size: 14px;
-  justify-content: flex-start;
-}
+  .header__nav__icon > svg.MuiSvgIcon-root{
+    width: 15px;
+    height: 15px;
+  }
 
-.header__login__item--last{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 65px;
-  opacity: 0.8;
-  transition: transform 150ms ease-in-out;
-}
+  .header__nav__icon--first{
+    border-left: 2px solid #656839;
+  }
 
-.header__login__item--last:hover{
-  opacity: 1;
-  transform: scale(1.07);
-}
+  .header__nav__icon:hover{
+    opacity: 1;
+    transform: scale(1.03);
+  }
 
-.header__login__item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 65px;
-  border-right: 1px dotted #656839;
-  opacity: 0.8;
-  transition: transform 150ms ease-in-out;
-}
+  .header__nav__icon--active{
+    opacity: 1;
+    color: #656839;
+    border: none;
+    transform: none;
+    transition: none;
+  }
 
-.header__login__item:hover{
-  opacity: 1;
-  transform: scale(1.07);
-}
+  .header__nav__icon--active > svg.MuiSvgIcon-root{
+    width: 32px;
+    height: 32px;
+  }
 
-.header__nav__icon{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  width: 75px;
-  opacity: 0.7;
-  transition: transform 150ms ease-in-out;
-}
+  .header__nav__icon--active:hover{
+    opacity: 1;
+    transform: none;
+  }
 
-.header__nav__icon:hover{
-  opacity: 1;
-  transform: scale(1.03);
-}
+  .header__nav__icon:hover > .header__label{
+    display: inline;
+    border-right: none;
+  }
 
-.header__nav__icon--active{
-  opacity: 1;
-  transform: none;
-  transition: none;
-}
+  .header__nav__icon__last:hover > .header__label{
+    display: inline;
+  }
 
-.header__nav__icon--active:hover{
-  opacity: 1;
-  transform: none;
-}
+  .header__nav__icon--category{
+    width: 120px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.header__nav__icon:hover > .header__label{
-  display: inline;
-  border-right: none;
-}
-
-.header__nav__icon__last:hover > .header__label{
-  display: inline;
-}
-
-.header__label--active{
-  display: inline;
-}
-
-.header__nav__icon > .MuiSvgIcon-root{  
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/*Search formating*/
 .header__search{
   margin-right: 15px;
   display: flex;
@@ -156,34 +181,35 @@
   justify-content: space-between;
 }
 
-.header__search__input{
-  height: 25px !important;
-  min-width: 50px !important;
-  width: 250px;
-  border-radius: 3px thin;
-}
+  .header__search__input{
+    height: 25px !important;
+    min-width: 50px !important;
+    width: 250px;
+    border-radius: 3px thin;
+  }
 
-.header__search__icon{
-  padding: 5px;
-  height: 21.1px !important;
-  color: white;
-  cursor: pointer;
-  background-color: #656839;
-}
+  .header__search__icon{
+    padding: 5px;
+    height: 21.1px !important;
+    color: white;
+    cursor: pointer;
+    background-color: #656839;
+  }
 
+/*Cart formating*/
 .header__cart{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header__cart__item{
-  width: 35px;
-}
+  .header__cart__item{
+    width: 35px;
+  }
 
-.header__shopping__icon{
-  cursor: pointer;
-}
+  .header__shopping__icon{
+    cursor: pointer;
+  }
 
 /* Dinh dang cho cac icon */
 .header__logo__icon{
@@ -195,5 +221,11 @@
 .header__icon{
   width: 35px;
   height: 35px;
+}
+
+.header__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 

@@ -1,15 +1,11 @@
 import React from 'react';
 import "./Header.css";
-import { makeStyles } from '@material-ui/core/styles';
 import Logo from "constants/images/logos/logo_5.png";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
-import InfoIcon from "@material-ui/icons/Info";
-import ProductIcon from "constants/images/icons/product_icon_2.png";
-import CategoryIcon from "constants/images/icons/category_icon.png";
-import BrandIcon from "constants/images/icons/brand_icon_2.png";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 function Header() {
   return (
@@ -37,10 +33,10 @@ function Header() {
               <p className="login__label">Guest</p>
             </div>
             <div className="header__login__item">
-              <p className="login__label">SIGN IN</p>
+              <p className="login__label">Log In</p>
             </div>
             <div className="header__login__item--last">
-              <p className="login__label">SIGN UP</p>
+              <p className="login__label">Sign Up</p>
             </div>
           </div>
         </div>
@@ -48,44 +44,29 @@ function Header() {
         <div className="header__nav">
 
           { /*Navbar */ }
-          <div className="header__card">
+          <div className="header__card header__card--active">
             <div className="header__nav__icon header__nav__icon--active">
               <HomeIcon
                 className="header__icon"
-                fontSize="large"
               />
-              <p className="header__label header__label--active">Home</p>
+            </div>
+            <div className="header__nav__icon header__nav__icon--first">
+              <p className="header__label">Men</p>
+              <ArrowDropDownIcon className="header__label__arrow"/>
             </div>
             <div className="header__nav__icon">
-              <img 
-                className="header__icon"
-                src={ProductIcon}
-                alt=""
-              />
-              <p className="header__label">Product</p>
+              <p className="header__label">Women</p>
+              <ArrowDropDownIcon className="header__label__arrow"/>
             </div>
             <div className="header__nav__icon">
-              <img 
-                className="header__icon"
-                src={CategoryIcon}
-                alt=""
-              />
-              <p className="header__label">Category</p>
+              <p className="header__label">Styles</p>
             </div>
             <div className="header__nav__icon">
-              <img 
-                className="header__icon"
-                src={BrandIcon}
-                alt=""
-              />
-              <p className="header__label">Brand</p>
+              <p className="header__label">Sales</p>
             </div>
-            <div className="header__nav__icon header__nav__icon__last">
-              <InfoIcon
-                className="header__icon"
-                fontSize="large"
-              />
-              <p className="header__label">About Us</p>
+            <div className="header__nav__icon header__nav__icon--category">
+              <p className="header__label">Categories</p>
+              <ArrowDropDownIcon className="header__label__arrow"/>
             </div>
           </div>
 
