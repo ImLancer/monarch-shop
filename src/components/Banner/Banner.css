@@ -1,5 +1,54 @@
-.banner__content{
-  padding-left: 30px;
-  padding-right: 30px;
+.banner{
+  margin: 0;
+  position: relative;
+  object-fit: contain;
   height: 250px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
+
+/*Arrow icon formating*/
+.arrow__icon{
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+  .arrow__icon > svg.MuiSvgIcon-root{
+    padding-left: 10px;
+    color:white;
+  }
+
+  .icon__item{
+    border: 1px solid #DDC9B4;
+    border-radius: 5px;
+    min-width: 50px;
+    min-height: 80px;
+    transition: transform 150ms ease-in-out;
+  }
+
+  .icon__item:hover{
+    transform: scale(1.07);
+  }
+
+/*Icon mini slide formating*/
+.mini__slide__icon{
+  color: white;
+  padding: 5px;
+}
+
+  .slide__item{
+    transition: transform 150ms ease-in-out;
+  }
+
+  .slide__item:hover{
+    transform: scale(1.3);
+  }
+
+  .mini__slide__icon > svg.MuiSvgIcon-root{
+    width: 8px;
+    height: 8px;
+  }
