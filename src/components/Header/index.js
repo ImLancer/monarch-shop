@@ -59,12 +59,13 @@ function Header() {
               <ArrowDropDownIcon className="header__label__arrow"/>
             </div>
             <div className="header__nav__icon">
-              <p className="header__label">Styles</p>
+              <p className="header__label">Shoes</p>
+              <ArrowDropDownIcon className="header__label__arrow"/>
             </div>
             <div className="header__nav__icon">
               <p className="header__label">Sales</p>
             </div>
-            <div className="header__nav__icon header__nav__icon--category">
+            <div className="header__nav__icon header__nav__icon--last">
               <p className="header__label">Categories</p>
               <ArrowDropDownIcon className="header__label__arrow"/>
             </div>
