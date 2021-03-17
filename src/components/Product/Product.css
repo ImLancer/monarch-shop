@@ -1,0 +1,19 @@
+.product{
+  min-width: 300px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color__box{
+  display: flex;
+  align-items: center;
+}
+
+.color__item{
+  width: 25px;
+  height: 25px;
+  margin-right: 2px;
+  border: 1px solid black;
+}
