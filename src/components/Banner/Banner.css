@@ -2,7 +2,7 @@
   margin: 0;
   position: relative;
   object-fit: contain;
-  min-height: 310px !important;
+  min-height: 480px !important;
   display: flex;
   justify-content: space-between;
   align-items: center;

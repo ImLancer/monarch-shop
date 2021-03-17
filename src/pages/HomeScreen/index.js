@@ -2,6 +2,7 @@ import Header from 'components/Header';
 import Banner from 'components/Banner';
 import React from 'react';
 import "./HomeScreen.css";
+import Category from 'components/Category';
 
 function HomeScreen() {
   return (
@@ -12,6 +13,7 @@ function HomeScreen() {
 
       {/* Banner */}
       <Banner />
+      <Category />
 
       {/* product */}
 

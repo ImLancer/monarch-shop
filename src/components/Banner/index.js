@@ -17,8 +17,8 @@ function Banner() {
     >
       <div></div>
       <div className="arrow__icon">
-        <ArrowBackIcon  className="icon__item"/>
-        <ArrowForwardIcon className="icon__item"/>
+        {/* <ArrowBackIcon  className="icon__item"/>
+        <ArrowForwardIcon className="icon__item"/> */}
       </div>
       <div className="mini__slide__icon">
           <SquareIcon className="slide__item" fontSize="small"/>
