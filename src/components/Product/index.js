@@ -6,7 +6,7 @@ function Product({title, price, color, img}) {
     <div className="product">
       {console.log(img)}
       <img
-        src={"../Row/" + img}
+        src={img}
         className="product__image"
         width="150px"
         height="150px"

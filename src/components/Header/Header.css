@@ -177,6 +177,7 @@
 /*Search formating*/
 .header__search{
   margin-right: 15px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -230,3 +231,15 @@
   align-items: center;
 }
 
+.drop__down{
+  display: flex;
+  align-items: center;
+}
+
+.header__search__input{
+  height: 25px !important;
+  min-width: 50px !important;
+  width: 250px;
+  border-radius: 3px thin;
+  transition: all 0.2s ease-in-out;
+}

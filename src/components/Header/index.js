@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Header.css";
 import Logo from "constants/images/logos/logo_5.png";
 import SearchIcon from "@material-ui/icons/Search";
@@ -8,6 +8,8 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 function Header() {
+  const [value,setValue] = useState(false);
+
   return (
     <div className="header">
       <div className="header__content">
@@ -74,8 +76,31 @@ function Header() {
           { /* Search And Cart */ }
           <div className="header__card header__search-cart">
             <div className="header__search">
-              <input className="header__search__input" type="text" placeholder="Type value for searching"/>
-              <SearchIcon className="header__search__icon" />
+              <div className="drop__down">
+                <input
+                  className="header__search__input"
+                  style={value? {
+                    opacity: 1,
+                    transform: 'translatey(0px)'
+                  }: {
+                    opacity: 0,
+                    transform: 'translatey(-350%)'
+                  }}
+                  type="text" placeholder="Type value for searching"
+                />
+                <SearchIcon 
+                  className="header__search__icon"
+                  style={value? {
+                    backgroundColor: '#2A3D45',
+                    color: 'white'
+                  } : {
+                    backgroundColor: 'white',
+                    color: 'black'
+                  }}
+                  onClick={() => setValue(!value)}
+                />
+              </div>
+              
             </div>
 
             <div className="header__cart">
