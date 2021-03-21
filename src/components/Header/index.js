@@ -80,21 +80,25 @@ function Header() {
                 <input
                   className="header__search__input"
                   style={value? {
-                    opacity: 1,
-                    transform: 'translatey(0px)'
+                    visibility: 'visible',
+                    opacity: '1',
+                    border: '1px solid black'
                   }: {
-                    opacity: 0,
-                    transform: 'translatey(-350%)'
+                    visibility: 'hidden',
+                    opacity: '0',
+                    border: 'none'
                   }}
                   type="text" placeholder="Type value for searching"
                 />
                 <SearchIcon 
                   className="header__search__icon"
                   style={value? {
-                    backgroundColor: '#2A3D45',
-                    color: 'white'
+                    backgroundColor: 'white',
+                    border: '1px solid black',
+                    color: 'black'
                   } : {
                     backgroundColor: 'white',
+                    border: 'none',
                     color: 'black'
                   }}
                   onClick={() => setValue(!value)}

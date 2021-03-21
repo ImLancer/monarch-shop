@@ -192,9 +192,10 @@
 
   .header__search__icon{
     padding: 5px;
-    height: 21.1px !important;
+    height: 20px !important;
     color: white;
     cursor: pointer;
+    border-radius: 2px;
     background-color: #2A3D45;
   }
 
@@ -237,9 +238,9 @@
 }
 
 .header__search__input{
-  height: 25px !important;
+  height: 28px !important;
   min-width: 50px !important;
   width: 250px;
-  border-radius: 3px thin;
-  transition: all 0.2s ease-in-out;
+  border-radius: 2px;
+  transition: all 0.1s ease-in-out;
 }
