@@ -44,7 +44,6 @@ function Header() {
         </div>
 
         <div className="header__nav">
-
           { /*Navbar */ }
           <div className="header__card header__card--active">
             <div className="header__nav__icon header__nav__icon--active">
@@ -75,46 +74,42 @@ function Header() {
 
           { /* Search And Cart */ }
           <div className="header__card header__search-cart">
+            
             <div className="header__search">
-              <div className="drop__down">
+              <div
+                className="drop__down"
+                style={value? {
+                  transform: 'translateX(22%)'
+                }:{
+                  transform: 'translateX(122%)'
+                }}
+              >
                 <input
                   className="header__search__input"
-                  style={value? {
-                    visibility: 'visible',
-                    opacity: '1',
-                    border: '1px solid black'
-                  }: {
-                    visibility: 'hidden',
-                    opacity: '0',
+                  style={{
                     border: 'none'
                   }}
-                  type="text" placeholder="Type value for searching"
+                  type="text"
+                  placeholder="Search"
                 />
-                <SearchIcon 
-                  className="header__search__icon"
-                  style={value? {
-                    backgroundColor: 'white',
-                    border: '1px solid black',
-                    color: 'black'
-                  } : {
-                    backgroundColor: 'white',
-                    border: 'none',
-                    color: 'black'
-                  }}
-                  onClick={() => setValue(!value)}
+                <button className="header__search__close" onClick={() => setValue(false)}>X</button>
+              </div>
+              <div className="header__cart">
+                <ShoppingCartIcon
+                  className="header__cart__item header__shopping__icon"
                 />
               </div>
-              
+              <SearchIcon
+                style={{
+                  backgroundColor: 'white',
+                  color: 'black',
+                  cursor: 'pointer'
+                }}
+                onClick={() => setValue(true)}
+              />
             </div>
 
-            <div className="header__cart">
-              <ShoppingCartIcon
-                className="header__cart__item header__shopping__icon"
-                fontSize="small"
-              />
-              <p className="header__cart__item">0</p>
-              <p className="header__cart__item">0 $</p>
-            </div>
+            
           </div>
         </div>
       </div>

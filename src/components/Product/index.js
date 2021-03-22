@@ -8,14 +8,14 @@ function Product({title, price, color, img}) {
       <img
         src={img}
         className="product__image"
-        width="150px"
-        height="150px"
+        width="250px"
+        height="250px"
         alt=""
       />
       <div className="product__info">
-        <p className="product__title">{title}</p>
-        <p className="product__price">{price}</p>
-        <div className="color__box">
+        <p className="product__item product__title">{title}</p>
+        <p className="product__item product__price">{price}</p>
+        <div className="product__item color__box">
           <span>Color:</span>
         {
           color.map(index => (

@@ -24,9 +24,6 @@ function Banner() {
           <SquareIcon className="slide__item slide__item__active" fontSize="small"/>
           <SquareIcon className="slide__item" fontSize="small"/>
           <SquareIcon className="slide__item" fontSize="small"/>
-          <SquareIcon className="slide__item" fontSize="small"/>
-          <SquareIcon className="slide__item" fontSize="small"/>
-          <SquareIcon className="slide__item" fontSize="small"/>
         </div>
     </div>
   )

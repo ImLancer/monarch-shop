@@ -94,6 +94,7 @@
   border-top: 1px solid #3D0814;
   border-bottom: 3px solid #3D0814;
   background-color: white;
+  overflow-x: hidden;
 }
 
   .header__label--active{
@@ -176,7 +177,6 @@
 
 /*Search formating*/
 .header__search{
-  margin-right: 15px;
   position: relative;
   display: flex;
   align-items: center;
@@ -195,7 +195,6 @@
     height: 20px !important;
     color: white;
     cursor: pointer;
-    border-radius: 2px;
     background-color: #2A3D45;
   }
 
@@ -203,11 +202,15 @@
 .header__cart{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
+  .header__cart > .MuiSvgIcon-root{
+    padding: 10px;
+  }
+
   .header__cart__item{
-    width: 35px;
+    width: 25px;
   }
 
   .header__shopping__icon{
@@ -235,12 +238,39 @@
 .drop__down{
   display: flex;
   align-items: center;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.header__search > .MuiSvgIcon-root{
+  padding: 10px;
 }
 
 .header__search__input{
-  height: 28px !important;
-  min-width: 50px !important;
-  width: 250px;
-  border-radius: 2px;
+  width: 80vh;
+  padding: 2.95vh;
+  color: white;
+  background-color: #746D75;
+  box-shadow: 0 0 5px lightgrey;
   transition: all 0.1s ease-in-out;
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.header__search__close{
+  width: 4vw;
+  color: white;
+  padding: 4vh;
+  display: flex;
+  border-color: black;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  justify-content: center;
+  background-color: #746D75;
+  cursor: pointer;
 }
